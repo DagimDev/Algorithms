@@ -59,17 +59,38 @@ console.log("Algorithm Practice");
 // const check = EvenOdd(array);
 // console.log(array);
 
-
-
-// Create a function that takes a number as an argument. Add up all the numbers from 1 to the 
-// number you passed to the function. For example, if the input is 4 then your function should 
+// Create a function that takes a number as an argument. Add up all the numbers from 1 to the
+// number you passed to the function. For example, if the input is 4 then your function should
 // return 10 because 1 + 2 + 3 + 4 = 10.
-function addUp(num) {
-  let int = 0;
-  for (i = 0; i <= num; i++) {
-    int += i;
-  }
-  return int;
-}
+// function addUp(num) {
+//   let int = 0;
+//   for (i = 0; i <= num; i++) {
+//     int += i;
+//   }
+//   return int;
+// }
 
-console.log(addUp(4));
+// console.log(addUp(4));
+
+// 1. Find the Maximum Number in an Array
+// 🧠 Problem:
+// Given an array, return the largest number.
+// 🧩 Steps:
+// •	Initialize a variable to store the max value.
+// •	Iterate through the array.
+// •	Update
+
+const MaxValue = (a) => {
+  let max = 0;
+  for (i = 0; i < a.length; i++) {
+    if (a[i] < a[i + 1]) {
+      max = a[i + 1];
+    } 
+    console.log(a[i])
+  }
+  return max;
+};
+
+const yarra = [1, 20, 3, 4, 5];
+const maximum = MaxValue(yarra);
+console.log(maximum);
