@@ -30,3 +30,18 @@ function addUp(num) {
 }
 
 console.log(addUp(4));
+
+
+const MaxValue = (a) => {
+  let max = [0];
+  for (i = 0; i < a.length; i++) {
+    if (a[i]  > max) {
+      max = a[i];
+    }
+  }
+  return max;
+};
+
+const yarra = [1000, 22, 33000, 4, 5, 8, 900];
+const maximum = MaxValue(yarra);
+console.log(maximum);
