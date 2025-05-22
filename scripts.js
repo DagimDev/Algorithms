@@ -258,3 +258,10 @@ function findHiddenWord(a) {
   }
   return hiddenLetter;
 }
+
+// Test
+// detectWord("UcUNFYGaFYFYGtNUH") ➞ "cat"
+// detectWord("bEEFGBuFBRrHgUHlNFYaYr") ➞ "burglar"
+// detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment") ➞ "embezzlement"
+
+// console.log(findHiddenWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"));
