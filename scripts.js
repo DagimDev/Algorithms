@@ -42,23 +42,6 @@ console.log("Algorithm Practice");
 // const bubble = BubbleSort([12, 9, 5, 33, 89]);
 // console.log(bubble);
 
-// check if the array of the numbers are eveb or odd
-// function EvenOdd(p) {
-//   let posative = p;
-//   for (u = 0; u < posative.length; u++) {
-//     if (posative[u] % 2 === 0) {
-//       console.log("Is Even");
-//     } else {
-//       console.log("Is Odd");
-//     }
-//   }
-//   return posative;
-// }
-
-// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-// const check = EvenOdd(array);
-// console.log(array);
-
 // Create a function that takes a number as an argument. Add up all the numbers from 1 to the
 // number you passed to the function. For example, if the input is 4 then your function should
 // return 10 because 1 + 2 + 3 + 4 = 10.
