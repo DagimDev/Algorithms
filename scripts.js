@@ -265,3 +265,64 @@ function findHiddenWord(a) {
 // detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment") ➞ "embezzlement"
 
 // console.log(findHiddenWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"));
+
+
+// Question 2 (Edabit)
+// Create a function that returns true if the first array can be nested inside the second.
+
+// arr1 can be nested inside arr2 if:
+//   arr1's min is greater than arr2's min.
+//   arr1's max is less than arr2's max
+
+// Examples
+// canNest([1, 2, 3, 4], [0, 6]) ➞ true
+// canNest([3, 1], [4, 0]) ➞ true
+// canNest([9, 9, 8], [8, 9]) ➞ false
+// canNest([1, 2, 3, 4], [2, 3]) ➞ false
+
+// arr1, arr2
+// check if both inputs are array
+//   return please enter array value
+//   Use Array.isArray
+
+// 1. get the min value of array 1
+// arr1.sort()
+// arr1[0] is the min
+
+// 2. get the min value of array 2
+// arr2.sort()
+// arr2[0] is the min
+
+// 3. compare the two and if min arr 1 is less than or = return false
+// arr1[0] <=   arr2[0]  return false
+
+// 4. get the max value of array 1
+// arr1.sort()
+// arr1[arr1.length - 1] is the max
+
+// 5. get the max value of array 2
+// arr2.sort()
+// arr2[arr2.length - 1] is the max
+
+// 6. compare the two and if max arr 1 is greate than or = max arr 2 return false
+// arr1[arr1.length - 1] >= arr2[arr2.length - 1] return false
+
+// 7. return true
+
+function canNest(arr1, arr2) {
+  if (!(Array.isArray(arr1) && Array.isArray(arr2))) {
+    return "Both values need to Array";
+  }
+  let arr1Sorted = arr1.sort();
+  let arr2Sorted = arr2.sort();
+  let arr1min = arr1Sorted[0];
+  let arr2min = arr2Sorted[0];
+  let arr1max = arr1Sorted[arr1.length - 1];
+  let arr2max = arr2Sorted[arr2.length - 1];
+
+  if (arr1min <= arr2min || arr1max >= arr2max) {
+    return false;
+  } else {
+    return true;
+  }
+}
