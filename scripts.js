@@ -21,23 +21,40 @@ console.log("Algorithm Practice");
 // }
 // Fizzbuzz(100);
 
-const BubbleSort = (a) => {
-  let numbers = a;
-  let checker = true;
+// const BubbleSort = (a) => {
+//   let numbers = a;
+//   let checker = true;
 
-  while (checker) {
-    checker = false
-    for (i = 0; i < numbers.length - 1; i++) {
-      if (numbers[i] > numbers[i + 1]) {
-        checker = true
-        let temp = numbers[i];
-        numbers[i] = numbers[i + 1];
-        numbers[i + 1] = temp;
+//   while (checker) {
+//     checker = false
+//     for (i = 0; i < numbers.length - 1; i++) {
+//       if (numbers[i] > numbers[i + 1]) {
+//         checker = true
+//         let temp = numbers[i];
+//         numbers[i] = numbers[i + 1];
+//         numbers[i + 1] = temp;
+//       }
+//     }
+//   }
+//   return numbers;
+// };
+
+// const bubble = BubbleSort([12, 9, 5, 33, 89]);
+// console.log(bubble);
+
+// check if the array of the numbers are eveb or odd
+function EvenOdd(p) {
+  let posative = p;
+    for (u = 0; u < posative.length; u++) {
+      if (posative[u] % 2 === 0) {
+        console.log("Is Even")
+      } else {
+        console.log("Is Odd")
       }
     }
-  }
-  return numbers;
-};
+  return posative;
+}
 
-const bubble = BubbleSort([12, 9, 5, 33, 89]);
-console.log(bubble);
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+const check = EvenOdd(array)
+console.log(array)
