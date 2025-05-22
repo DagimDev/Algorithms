@@ -117,11 +117,20 @@ console.log("Algorithm Practice");
 // console.log(test)
 
 
+// 4. Count Vowels in a String
+// 🧠 Problem:
+// Count number of vowels in a string.
+// 🧩 Steps:
+// •	Loop through each character and check if it’s a vowel.
+
+
 const CountVowels = (s) => {
   let vowel = "";
+  let cc = 0
   for (i = 0; i < s.length; i++) {
     if (s[i] == 'a') {
       vowel += s[i]
+      cc += i
     } 
     else if (s[i] == 'e') {
       vowel += s[i]
