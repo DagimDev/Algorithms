@@ -80,16 +80,43 @@ console.log("Algorithm Practice");
 // •	Iterate through the array.
 // •	Update
 
-const MaxValue = (a) => {
-  let max = [0];
-  for (i = 0; i < a.length; i++) {
-    if (a[i]  > max) {
-      max = a[i];
-    }
-  }
-  return max;
-};
+// const MaxValue = (a) => {
+//   let max = [0];
+//   for (i = 0; i < a.length; i++) {
+//     if (a[i]  > max) {
+//       max = a[i];
+//     }
+//   }
+//   return max;
+// };
 
-const yarra = [1000, 22, 33000, 4, 5, 8, 900];
-const maximum = MaxValue(yarra);
-console.log(maximum);
+// const yarra = [1000, 22, 33000, 4, 5, 8, 900];
+// const maximum = MaxValue(yarra);
+// console.log(maximum);
+
+
+
+// 2. Reverse a String
+// 🧠 Problem:
+// Reverse the input string without using built-in reverse().
+// 🧩 Steps:
+// •	Loop backward and build the string manually.
+
+// const sx = "hello"
+// let str = ""
+// for (r = sx.length; r >= 0; r--){
+//   str =  
+//   console.log([r])
+// }
+
+const ReverseString = (a) => {
+  let str = "";
+  for (r = a.length; r >= 0; r--) {
+    str = str + a[r]
+  }
+  return str;
+} 
+
+const string = "hello"
+const test = ReverseString(string)
+console.log(test)
