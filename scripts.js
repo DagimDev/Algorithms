@@ -103,15 +103,42 @@ console.log("Algorithm Practice");
 // •	Loop backward and build the string manually.
 
 
-const ReverseString = (a) => {
-  let str = "";
-  // i add this codition "r = a.length - 1; b/c the idex of strings start counting from zero"
-  for (r = a.length - 1; r >= 0; r--) {
-    str = str + a[r]
-  }
-  return str;
-} 
+// const ReverseString = (a) => {
+//   let str = "";
+//   // i add this codition "r = a.length - 1; b/c the idex of strings start counting from zero"
+//   for (r = a.length - 1; r >= 0; r--) {
+//     str = str + a[r]
+//   }
+//   return str;
+// } 
 
-const string = "hello"
-const test = ReverseString(string)
-console.log(test)
+// const string = "hello"
+// const test = ReverseString(string)
+// console.log(test)
+
+
+const CountVowels = (s) => {
+  let vowel = "";
+  for (i = 0; i < s.length; i++) {
+    if (s[i] == 'a') {
+      vowel += s[i]
+    } 
+    else if (s[i] == 'e') {
+      vowel += s[i]
+    }
+    else if (s[i] == 'i') {
+      vowel += s[i]
+    }
+    else if (s[i] == 'o') {
+      vowel += s[i]
+    }
+    else if (s[i] == 'u') {
+      vowel += s[i]
+    }
+  }
+  return vowel
+}
+
+const variable = "palindrome";
+const count = CountVowels(variable);
+console.log(count)
