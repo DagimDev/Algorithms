@@ -102,16 +102,11 @@ console.log("Algorithm Practice");
 // 🧩 Steps:
 // •	Loop backward and build the string manually.
 
-// const sx = "hello"
-// let str = ""
-// for (r = sx.length; r >= 0; r--){
-//   str =  
-//   console.log([r])
-// }
 
 const ReverseString = (a) => {
   let str = "";
-  for (r = a.length; r >= 0; r--) {
+  // i add this codition "r = a.length - 1; b/c the idex of strings start counting from zero"
+  for (r = a.length - 1; r >= 0; r--) {
     str = str + a[r]
   }
   return str;
