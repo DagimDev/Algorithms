@@ -57,3 +57,26 @@ const ReverseString = (s) => {
 
 const revstr = ReverseString("Hello");
 console.log(revstr)
+
+
+
+// Count Vowels 
+
+// const CountVowels = (c) => {
+//     let sum = 0;
+//     let store = "";
+//         for (v = 0; v < c.length; v++) {
+//             if (c[v] === 'a' || c[v] === 'e' || c[v] === 'i' || c[v] === 'o' || c[v] === 'u') {
+//                 store += c[v]
+//             }
+//         }
+//         for (f = 0; f < store.length; f++){
+//             sum += store[f]
+//         }
+
+//     return sum;
+// }
+
+// const vowel = CountVowels("hoalelodfghsu");
+// console.log(vowel)
+
