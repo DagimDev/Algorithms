@@ -85,12 +85,12 @@ const MaxValue = (a) => {
   for (i = 0; i < a.length; i++) {
     if (a[i] < a[i + 1]) {
       max = a[i + 1];
-    } 
-    console.log(a[i])
+      
+    }
   }
   return max;
 };
 
-const yarra = [1, 20, 3, 4, 5];
+const yarra = [1, 22, 33, 4, 5, 8, 9];
 const maximum = MaxValue(yarra);
 console.log(maximum);
