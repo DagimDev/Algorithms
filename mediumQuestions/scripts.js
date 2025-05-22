@@ -42,3 +42,18 @@ const BubbleSort = (a) => {
 
 const bubble = BubbleSort([12, 9, 5, 33, 89]);
 console.log(bubble);
+
+const ReverseString = (s) => {
+    let reversed = "";
+    // i add this codition "r = a.length - 1; b/c the idex of strings start counting from zero" so -1 is 
+    // for decrease the last index 
+
+    for (r = s.length - 1; r >= 0; r--) {
+        reversed += s[r]
+    }
+
+    return reversed;
+}
+
+const revstr = ReverseString("Hello");
+console.log(revstr)
