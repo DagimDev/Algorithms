@@ -20,3 +20,25 @@ console.log("Medium Algortithm Questions")
     }
 }
 Fizzbuzz(100);
+
+
+const BubbleSort = (a) => {
+  let numbers = a;
+  let checker = true;
+
+  while (checker) {
+    checker = false
+    for (i = 0; i < numbers.length - 1; i++) {
+      if (numbers[i] > numbers[i + 1]) {
+        checker = true
+        let temp = numbers[i];
+        numbers[i] = numbers[i + 1];
+        numbers[i + 1] = temp;
+      }
+    }
+  }
+  return numbers;
+};
+
+const bubble = BubbleSort([12, 9, 5, 33, 89]);
+console.log(bubble);
