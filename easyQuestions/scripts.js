@@ -45,3 +45,17 @@ const MaxValue = (a) => {
 const yarra = [1000, 22, 33000, 4, 5, 8, 900];
 const maximum = MaxValue(yarra);
 console.log(maximum);
+
+
+// 13. Sum of Even Numbers in Array
+const SumOfEvennumbers = (h) => {
+  let sum = 0;
+  for (j = 0; j < h.length; j++) {
+    if (h[j] % 2 === 0) {
+      sum += h[j]
+    }
+  }
+  return sum;
+}
+
+console.log(SumOfEvennumbers([1, 2, 3, 4, 5, 6, 88, 98, 100, 2]))
