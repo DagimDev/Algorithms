@@ -333,3 +333,17 @@ function canNest(arr1, arr2) {
 // canNest([9, 9, 8], [8, 9]) ➞ false
 // canNest([1, 2, 3, 4], [2, 3]) ➞ false
 console.log(canNest([3, 1], [4, 0]));
+
+
+// 13. Sum of Even Numbers in Array
+const SumOfEvennumbers = (h) => {
+  let sum = 0;
+  for (j = 0; j < h.length; j++) {
+    if (h[j] % 2 === 0) {
+      sum += h[j]
+    }
+  }
+  return sum;
+}
+
+console.log(SumOfEvennumbers([1, 2, 3, 4, 5, 6, 88, 98, 100, 2]))
