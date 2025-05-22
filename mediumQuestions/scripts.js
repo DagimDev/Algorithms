@@ -80,3 +80,53 @@ console.log(revstr)
 // const vowel = CountVowels("hoalelodfghsu");
 // console.log(vowel)
 
+
+// 4. Count Vowels in a String
+// 🧠 Problem:
+// Count number of vowels in a string.
+// 🧩 Steps:
+// •	Loop through each character and check if it’s a vowel.
+
+
+const CountVowels = (s) => {
+  let vowel = "";
+  let cc = 0
+  const toLower = s.toLowerCase()
+  console.log(toLower)
+  for (i = 0; i < s.length; i++) {
+    if (s[i] == 'a') {
+      vowel += s[i]
+      cc += i
+    } 
+    else if (s[i] == 'e') {
+      vowel += s[i]
+    }
+    else if (s[i] == 'i') {
+      vowel += s[i]
+    }
+    else if (s[i] == 'o') {
+      vowel += s[i]
+    }
+    else if (s[i] == 'u') {
+      vowel += s[i]
+    }
+  }
+  return vowel
+}
+
+const variable = "PalinDroMRe";
+const count = CountVowels(variable);
+console.log(count)
+
+
+function countVowels(str) {
+    let count = 0;
+    const vowels = "aeiou";
+    for (let char of str.toLowerCase()) {
+        if (vowels.includes(char)) count++;
+    }
+    return count;
+}
+
+console.log(countVowels("palindrome"))
+
