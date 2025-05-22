@@ -326,3 +326,10 @@ function canNest(arr1, arr2) {
     return true;
   }
 }
+
+// Test
+// canNest([1, 2, 3, 4], [0, 6]) ➞ true
+// canNest([3, 1], [4, 0]) ➞ true
+// canNest([9, 9, 8], [8, 9]) ➞ false
+// canNest([1, 2, 3, 4], [2, 3]) ➞ false
+console.log(canNest([3, 1], [4, 0]));
