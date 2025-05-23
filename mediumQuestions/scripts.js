@@ -223,3 +223,15 @@ function intersection(arr1, arr2) {
 const array1 = [1, 2, 3, 5, 6, 9]
 const array2 = [4, 20, 30, 15, 16, 7]
 console.log(intersection(array1, array2))
+
+// Move Zeroes to End
+function moveZeroes(arr) {
+    let result = arr.filter(num => num !== 0);
+    while (result.length < arr.length) {
+        result.push(0);
+    }
+    return result;
+}
+
+const mz = [1, 2, 3, 5, 6, 9]
+console.log(moveZeroes(mz))
