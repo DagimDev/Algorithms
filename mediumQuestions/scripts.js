@@ -130,3 +130,18 @@ function countVowels(str) {
 
 console.log(countVowels("palindrome"))
 
+
+// 12. Find the Longest Word in a Sentence this works only to see in numbers
+const LongestWord = (w) => {
+  // const word = w;
+  let howLong = 0;
+  for (s = 0; s < w.length; s++) {
+    if (howLong < w[s].length) {
+      howLong = w[s].length
+    }
+  }
+  return howLong;
+}
+
+const sentence = ["", "hello", "dog", "numbers", "nathan tedi"];
+console.log(LongestWord(sentence))
