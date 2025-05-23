@@ -111,10 +111,12 @@ const CountVowels = (s) => {
       vowel += s[i]
     }
   }
-  return vowel
+
+  let calc = vowel.length
+  return calc
 }
 
-const variable = "PalinDroMRe";
+const variable = "PalinDaroMRei";
 const count = CountVowels(variable);
 console.log(count)
 
