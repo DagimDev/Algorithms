@@ -188,3 +188,16 @@ console.log(CapitalizeFirstLatter(Word))
 function capitalizeWords(str) {
     return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 }
+
+// Check if Array is Sorted
+
+function isSorted(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < arr[i - 1]) return false;
+  }
+  console.log(arr[i - 1])
+  return true;
+}
+
+const intiger = [2, 6, 8, 7, 5, 3]
+console.log(isSorted(intiger))
