@@ -248,3 +248,21 @@ function commonChars(str1, str2) {
 const string1 = "hello";
 const string2 = "world"
 console.log(commonChars(string1, string2))
+
+
+// Find Second Largest in Array
+// 🧠 Steps:
+// •	Track both max and second max in a loop.
+
+function secondLargest(arr) {
+    let max = -Infinity, second = -Infinity;
+    for (let num of arr) {
+        if (num > max) {
+            second = max;
+            max = num;
+        } else if (num > second && num !== max) {
+            second = num;
+        }
+    }
+    return second;
+}
