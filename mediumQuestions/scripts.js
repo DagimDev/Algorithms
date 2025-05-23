@@ -266,3 +266,17 @@ function secondLargest(arr) {
     }
     return second;
 }
+
+// 6. Find Missing Number (1 to n)
+// 🧠 Problem:
+// One number from 1 to n is missing in an array.
+// 🧩 Steps:
+// •	Use sum formula: n*(n+1)/2
+
+function findMissing(arr) {
+    let n = arr.length + 1;
+    let expectedSum = (n * (n + 1)) / 2;
+    let actualSum = arr.reduce((a, b) => a + b, 0);
+    return expectedSum - actualSum;
+}
+
