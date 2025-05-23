@@ -235,3 +235,16 @@ function moveZeroes(arr) {
 
 const mz = [1, 2, 3, 5, 6, 9]
 console.log(moveZeroes(mz))
+
+
+// Find Common Characters Between Strings
+
+function commonChars(str1, str2) {
+    const set1 = new Set(str1);
+    const set2 = new Set(str2);
+    return [...set1].filter(char => set2.has(char));
+}
+
+const string1 = "hello";
+const string2 = "world"
+console.log(commonChars(string1, string2))
