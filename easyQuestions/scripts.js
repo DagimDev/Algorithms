@@ -59,3 +59,16 @@ const SumOfEvennumbers = (h) => {
 }
 
 console.log(SumOfEvennumbers([1, 2, 3, 4, 5, 6, 88, 98, 100, 2]))
+
+
+const sdd = "hello"
+let you = ""
+for (a = 0; a < sdd.length; a++) {
+  if (sdd[a] == sdd[0]) {
+    you = sdd[0].toUpperCase()
+  } else {
+    you += sdd[a]
+  }
+  // you = sdd[0].toUpperCase()
+}
+console.log(you)
