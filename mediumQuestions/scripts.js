@@ -280,3 +280,17 @@ function findMissing(arr) {
     return expectedSum - actualSum;
 }
 
+// 5. Find Duplicate in Array
+// 🧠 Problem:
+// Return the first duplicate element found.
+// 🧩 Steps:
+// •	Use a Set to store seen numbers.
+
+function findDuplicate(arr) {
+    const seen = new Set();
+    for (let num of arr) {
+        if (seen.has(num)) return num;
+        seen.add(num);
+    }
+    return null;
+}
