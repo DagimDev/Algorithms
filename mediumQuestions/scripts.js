@@ -201,3 +201,15 @@ function isSorted(arr) {
 
 const intiger = [2, 6, 8, 7, 5, 3]
 console.log(isSorted(intiger))
+
+// 11. Check Anagram
+// 🧠 Problem:
+// Are two strings anagrams?
+// 🧩 Steps:
+// •	Sort both 
+
+function isAnagram(str1, str2) {
+    return str1.split('').sort().join('') === str2.split('').sort().join('');
+}
+
+console.log(isAnagram("hello", "hello"))
