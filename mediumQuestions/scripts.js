@@ -132,7 +132,9 @@ console.log(countVowels("palindrome"))
 
 
 // 12. Find the Longest Word in a Sentence this works only to see in numbers
-const LongestWord = (w) => {
+// in this senario i give initial value for howlong 0 so the datatype is number so return the 
+// number the length of an array index 
+const LongestWordInnum = (w) => {
   // const word = w;
   let howLong = 0;
   for (s = 0; s < w.length; s++) {
@@ -144,4 +146,18 @@ const LongestWord = (w) => {
 }
 
 const sentence = ["", "hello", "dog", "numbers", "nathan tedi"];
-console.log(LongestWord(sentence))
+console.log(LongestWordInnum(sentence))
+
+// 12. Find the Longest Word in a Sentence this works only to see in numbers
+const LongestWordInWords = (w) => {
+   const word = w;
+  let howLong = "";
+  for (s = 0; s < word.length; s++) {
+    if (howLong.length < word[s].length) {
+      howLong = word[s]
+    }
+  }
+  return howLong;
+}
+
+console.log(LongestWordInWords(sentence))
