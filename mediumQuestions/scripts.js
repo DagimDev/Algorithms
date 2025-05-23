@@ -160,4 +160,25 @@ const LongestWordInWords = (w) => {
   return howLong;
 }
 
-console.log(LongestWordInWords(sentence))
+console.log(LongestWordInWords(sentence));
+
+// Capitalize First Letter of Each Word
+const CapitalizeFirstLatter = (l) => {
+  let latter = l
+  let sums = ""
+    for (f = 0; f < latter.length; f++) {
+      let dec = latter[f]
+      for (g = 0; g < dec.length; g++) {
+        if (dec[g] === dec[0]) {
+          sums += dec[0].toUpperCase()
+        } else {
+          sums += dec[g]
+        }
+      }
+    }
+    // console.log(sums)
+  return sums
+}
+
+const Word = ["cat", "hello", "dog", "numbers", "sori"];
+console.log(CapitalizeFirstLatter(Word))
