@@ -60,7 +60,7 @@ const SumOfEvennumbers = (h) => {
 
 console.log(SumOfEvennumbers([1, 2, 3, 4, 5, 6, 88, 98, 100, 2]))
 
-
+// Capitalize First Letter 
 const sdd = "hello"
 let you = ""
 for (a = 0; a < sdd.length; a++) {
@@ -72,3 +72,17 @@ for (a = 0; a < sdd.length; a++) {
   // you = sdd[0].toUpperCase()
 }
 console.log(you)
+
+// Find minumum value from the array
+const input = [1000, 4, -4, 44, 99, 35, 22, 555];
+let min = 0;
+for (m = 0; m < input.length; m++) {
+  if (min < input[m])
+  {
+    min = min
+  }else{
+    min = input[m]
+  }
+    }
+console.log(min)
+  
