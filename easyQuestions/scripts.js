@@ -101,14 +101,19 @@ const _b = 3;
 const _pow = Math.pow(_a, _b)
 console.log(_pow)
 
-// Generate Fibonacci Sequence up to n Terms
-// Input: 5 → Output: [0, 1, 1, 2, 3]
+// Remove All Whitespace from a String
+// Input: " a b c " → Output: "abc"
 
-function Fibonacci(x) {
-  let ressult = [0, 1];
-  for (c = 2; c < x; c++) {
-    ressult[c] = ressult[c - 1] + ressult[c - 2];
+const RemoveWhitespace = (str) => {
+  let compare = " ";
+  let store = "";
+  for (rw = 0; rw < str.length; rw++) {
+    if (str[rw] !== compare) {
+      store += str[rw]
+    }
   }
-  return ressult;
+  return store;
 }
-console.log(Fibonacci(5));
+
+const RemovedWhiteSpace = RemoveWhitespace(" da gi m ");
+console.log(RemovedWhiteSpace)
