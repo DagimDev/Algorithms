@@ -294,3 +294,18 @@ function findDuplicate(arr) {
     }
     return null;
 }
+
+
+
+// Generate Fibonacci Sequence up to n Terms
+// Input: 5 → Output: [0, 1, 1, 2, 3]
+
+
+function Fibonacci(x) {
+  let ressult = [0, 1];
+  for (c = 2; c < x; c++) {
+    ressult[c] = ressult[c - 1] + ressult[c - 2];
+  }
+  return ressult;
+}
+console.log(Fibonacci(5));
