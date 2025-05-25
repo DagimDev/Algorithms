@@ -94,3 +94,9 @@ const power = (x, y) => {
 };
 console.log(power(3, 3));
 
+// Calculate Power (x^n) using Math.pow
+
+const _a = 4;
+const _b = 3;
+const _pow = Math.pow(_a, _b)
+console.log(_pow)
