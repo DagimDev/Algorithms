@@ -364,3 +364,18 @@ function pairSum(arr, target) {
 }
 
 console.log(pairSum([1, 2, 3, 4, 5], 6));
+
+
+
+// Rotate an Array by k Positions
+function rotateArray(arr, k) {
+  const n = arr.length;
+  k = k % n; // In case k > length
+  return arr.slice(-k).concat(arr.slice(0, n - k));
+}
+
+console.log(rotateArray([1, 2, 3, 4, 5], 2)); // [4, 5, 1, 2, 3]
+// 💡 Explanation:
+// •	slice(-k) gets the last k elements.
+// •	slice(0, n - k) gets the first part.
+// •	concat() merges them.
