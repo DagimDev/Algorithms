@@ -161,3 +161,14 @@ function countChar(str, target) {
 }
 
 console.log(countChar("hello world", "l")); // 3
+
+
+function countChar(str, target) {
+  let count = 0;
+  for (let char of str) {
+    if (char === target) count++;
+  }
+  return count;
+}
+
+console.log(countChar("hello world", "l")); // 3
