@@ -379,3 +379,19 @@ console.log(rotateArray([1, 2, 3, 4, 5], 2)); // [4, 5, 1, 2, 3]
 // •	slice(-k) gets the last k elements.
 // •	slice(0, n - k) gets the first part.
 // •	concat() merges them.
+
+// 24. Group Anagrams
+function groupAnagrams(words) {
+  const map = {};
+  for (let word of words) {
+    const key = word.split('').sort().join('');
+    map[key] = map[key] || [];
+    map[key].push(word);
+  }
+  return Object.values(map);
+}
+
+console.log(groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]));
+// 💡 Explanation:
+// •	Sort letters in each word to get a common key.
+// •	Group words by this key in a map.
