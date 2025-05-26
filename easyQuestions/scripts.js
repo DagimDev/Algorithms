@@ -121,10 +121,27 @@ console.log(RemovedWhiteSpace);
 // Merge Two Sorted Arrays
 // Input: [1, 3, 5] and [2, 4, 6] → Output: [1, 2, 3, 4, 5, 6]
 
-const ds = [1, 4, 5] 
-const sd = [2, 3, 6] 
-let sum = [0]
+// const ds = [1, 4, 5] 
+// const sd = [2, 3, 6] 
+// let sum = [0]
 
-ds.push(...sd)
-sum = ds.sort()
-console.log(sum)
+// ds.push(...sd)
+// sum = ds.sort()
+// console.log(sum)
+
+const MergeArrays = (arr1, arr2) => {
+  let merged = [];
+  let sorting = []
+  // merging two arrays by Push and ...spread oprator method
+  arr1.push(...arr2);
+  merged = arr1.sort();
+  // merging two arrays by concat method
+    // merged = arr1.concat(...arr2);
+    // sorting = merged.sort()
+  return merged;
+}
+
+const firstArray = [1, 3, 5];
+const secondArray = [2, 4, 6];
+const sorted = MergeArrays(firstArray, secondArray);
+console.log(sorted);
