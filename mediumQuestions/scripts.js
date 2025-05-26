@@ -309,3 +309,18 @@ function Fibonacci(x) {
   return ressult;
 }
 console.log(Fibonacci(5));
+
+
+// First Non-Repeating Character
+function firstNonRepeatingChar(str) {
+  const count = {};
+  for (let char of str) {
+    count[char] = (count[char] || 0) + 1;
+  }
+  for (let char of str) {
+    if (count[char] === 1) return char;
+  }
+  return null;
+}
+
+console.log(firstNonRepeatingChar("aabbcdde")); // "c"
