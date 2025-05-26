@@ -98,8 +98,8 @@ console.log(power(3, 3));
 
 const _a = 4;
 const _b = 3;
-const _pow = Math.pow(_a, _b)
-console.log(_pow)
+const _pow = Math.pow(_a, _b);
+console.log(_pow);
 
 // Remove All Whitespace from a String
 // Input: " a b c " → Output: "abc"
@@ -109,11 +109,22 @@ const RemoveWhitespace = (str) => {
   let store = "";
   for (rw = 0; rw < str.length; rw++) {
     if (str[rw] !== compare) {
-      store += str[rw]
+      store += str[rw];
     }
   }
   return store;
-}
+};
 
 const RemovedWhiteSpace = RemoveWhitespace(" da gi m ");
-console.log(RemovedWhiteSpace)
+console.log(RemovedWhiteSpace);
+
+// Merge Two Sorted Arrays
+// Input: [1, 3, 5] and [2, 4, 6] → Output: [1, 2, 3, 4, 5, 6]
+
+const ds = [1, 4, 5] 
+const sd = [2, 3, 6] 
+let sum = [0]
+
+ds.push(...sd)
+sum = ds.sort()
+console.log(sum)
