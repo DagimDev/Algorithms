@@ -25,7 +25,7 @@ console.log(zyegerm.split("").reverse().join(""))
 const newReverseString = (str) => {
   let Reversed = "";
   for (const char of str) {
-    Reversed = char + Reversed; // Prepend each character
+    Reversed += char; // Prepend each character
   }
   return Reversed;
 }
@@ -33,3 +33,35 @@ const newReverseString = (str) => {
 const newString = "hello";
 const test = newReverseString(newString);
 console.log(test)
+
+
+
+
+
+// Palindrome Checker
+// Check if a string is a palindrome (reads the same backward as forward).
+// Example: isPalindrome("racecar") → true
+
+const PalindromeChecker = (pal) => {
+    for (let p = 0; p < Math.floor(pal.length / 2); p++) {
+        if (pal[p] !== pal[pal.length - 1 - p]) {
+            // console.log(pal[pal.length - 1 - 1])
+            return false;
+        }
+    }
+    return true;
+}
+const palindrome = "racecar";
+const palchecked = PalindromeChecker(palindrome);
+console.log(palchecked)
+
+// const str = "hello";
+
+// let index = 0;
+// for (const char of str) {
+//   if (index === str.length - 1) {
+//     console.log("Last character:", char);
+//   }
+//   index++;
+// }
+// console.log(index)
