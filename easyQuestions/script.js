@@ -1,22 +1,22 @@
-console.log("Another js file")
+console.log("Another js file");
 
 const $reverseString = (str) => {
-  let $reverse = ""
+  let $reverse = "";
   for (r = str.length - 1; r >= 0; r--) {
-      $reverse += str[r]
+    $reverse += str[r];
   }
   return $reverse;
-}
+};
 
-const strarr = "hello dagim"
+const strarr = "hello dagim";
 const reversed = $reverseString(strarr);
-console.log(reversed); 
+console.log(reversed);
 
 const reverseString = (str) => str.split("").reverse().join("");
 console.log(reverseString("hello")); // "olleh"
 
-const zyegerm = "dagim"
-console.log(zyegerm.split("").reverse().join(""))
+const zyegerm = "dagim";
+console.log(zyegerm.split("").reverse().join(""));
 // How it works:
 // split("") → Converts the string into an array of characters.
 // reverse() → Reverses the array.
@@ -28,32 +28,28 @@ const newReverseString = (str) => {
     Reversed += char; // Prepend each character
   }
   return Reversed;
-}
+};
 
 const newString = "hello";
 const test = newReverseString(newString);
-console.log(test)
-
-
-
-
+console.log(test);
 
 // Palindrome Checker
 // Check if a string is a palindrome (reads the same backward as forward).
 // Example: isPalindrome("racecar") → true
 
 const PalindromeChecker = (pal) => {
-    for (let p = 0; p < Math.floor(pal.length / 2); p++) {
-        if (pal[p] !== pal[pal.length - 1 - p]) {
-            // console.log(pal[pal.length - 1 - 1])
-            return false;
-        }
+  for (let p = 0; p < Math.floor(pal.length / 2); p++) {
+    if (pal[p] !== pal[pal.length - 1 - p]) {
+      // console.log(pal[pal.length - 1 - 1])
+      return false;
     }
-    return true;
-}
+  }
+  return true;
+};
 const palindrome = "racecar";
 const palchecked = PalindromeChecker(palindrome);
-console.log(palchecked)
+console.log(palchecked);
 
 // const str = "hello";
 
@@ -66,27 +62,49 @@ console.log(palchecked)
 // }
 // console.log(index)
 
-
-
-
-
 // Find the Largest Number in an Array
 // Write a function that returns the largest number in an array.
 // Example: findMax([3, 1, 4, 1, 5, 9]) → 9
 const findMax = (arr) => {
-    let max = arr[0];
-    // let max = -Infinity;
-    if (arr.length === 0) {
-        console.log("The Array is Empty")
+  let max = arr[0];
+  // let max = -Infinity;
+  if (arr.length === 0) {
+    console.log("The Array is Empty");
+  }
+  for (const num of arr) {
+    if (num > max) {
+      max = num;
     }
-    for (const num of arr) {
-        if (num > max){
-            max = num;
-        }
-    }
-    return max
-}
+  }
+  return max;
+};
 
 const maxFound = [0];
 const result = findMax(maxFound);
 console.log(result);
+
+// FizzBuzz
+// Print numbers from 1 to n, but for multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; and
+// for multiples of both, print "FizzBuzz".
+// Example: fizzBuzz(5) → [1, 2, "Fizz", 4, "Buzz"]
+
+const FizzBuzz = (num) => {
+  let res = "";
+  if (num <= 0) return "Please provide only posative number"
+    for (let i = 1; i <= num; i++) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        res += `FizzBuzz \n`;
+      } else if (i % 3 === 0) {
+        res += "Fizz \n";
+      } else if (i % 5 === 0) {
+        res += "Buzz \n";
+      } else {
+        res += `${i}\n`;
+      }
+    }
+  
+  return res;
+};
+
+const fizzBuzzChecked = FizzBuzz(0);
+console.log(fizzBuzzChecked);
