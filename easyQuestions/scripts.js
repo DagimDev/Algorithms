@@ -172,3 +172,24 @@ function countChar(str, target) {
 }
 
 console.log(countChar("hello world", "l")); // 3
+
+
+// Find Second Largest in Array
+// 🧠 Steps:
+// •	Track both max and second max in a loop.
+
+const SecondMax = (arr) => {
+  let $max = [0];
+  let $PrevMax = [0];
+  for (p = 0; p < arr.length; p++){
+    if (arr[p] > $max) {
+      $PrevMax = $max;
+      $max = arr[p];
+    }
+  }
+  return `Maximum is: ${$max} Second max is: ${$PrevMax}`;
+}
+
+const $array = [7, 8, 3, 12, 6];
+const $result = SecondMax($array);
+console.log($result);
