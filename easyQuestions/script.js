@@ -119,3 +119,22 @@ const FizzBuzz = (num) => {
 
 const fizzBuzzChecked = FizzBuzz(30);
 console.log(fizzBuzzChecked);
+
+
+// Sum of an Array
+// Write a function that sums all numbers in an array.
+// Example: sumArray([1, 2, 3, 4]) → 10
+
+const sumArray = (arr) => {
+    let sum = 0;
+    for (let j = 0; j < arr.length; j++){
+        sum = sum + arr[j]
+    }
+    // for (const j of arr) {
+    //     sum = sum + j
+    // }
+    return sum
+};
+
+const sumed = sumArray([1, 2, 3, 4]); 
+console.log(sumed)
