@@ -89,22 +89,33 @@ console.log(result);
 // Example: fizzBuzz(5) → [1, 2, "Fizz", 4, "Buzz"]
 
 const FizzBuzz = (num) => {
-  let res = "";
-  if (num <= 0) return "Please provide only posative number"
-    for (let i = 1; i <= num; i++) {
-      if (i % 3 === 0 && i % 5 === 0) {
-        res += `FizzBuzz \n`;
-      } else if (i % 3 === 0) {
-        res += "Fizz \n";
-      } else if (i % 5 === 0) {
-        res += "Buzz \n";
-      } else {
-        res += `${i}\n`;
-      }
-    }
-  
-  return res;
+  //   let res = "";
+  const res = [];
+  if (num <= 0) return "Please provide only posative number";
+  for (let i = 1; i < num; i++) {
+    res.push(
+      i % 15 === 0
+        ? "FizzBuzz"
+        : i % 3 === 0
+        ? "Fizz"
+        : i % 5 === 0
+        ? "Buzz"
+        : i
+    );
+  }
+  return res.join("\n");
+  // for (let i = 1; i <= num; i++) {
+  //   if (i % 3 === 0 && i % 5 === 0) {
+  //     res += `FizzBuzz \n`;
+  //   } else if (i % 3 === 0) {
+  //     res += "Fizz \n";
+  //   } else if (i % 5 === 0) {
+  //     res += "Buzz \n";
+  //   } else {
+  //     res += `${i}\n`;
+  //   }
+  // }
 };
 
-const fizzBuzzChecked = FizzBuzz(0);
+const fizzBuzzChecked = FizzBuzz(30);
 console.log(fizzBuzzChecked);
