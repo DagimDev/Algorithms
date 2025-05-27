@@ -65,3 +65,28 @@ console.log(palchecked)
 //   index++;
 // }
 // console.log(index)
+
+
+
+
+
+// Find the Largest Number in an Array
+// Write a function that returns the largest number in an array.
+// Example: findMax([3, 1, 4, 1, 5, 9]) → 9
+const findMax = (arr) => {
+    let max = arr[0];
+    // let max = -Infinity;
+    if (arr.length === 0) {
+        console.log("The Array is Empty")
+    }
+    for (const num of arr) {
+        if (num > max){
+            max = num;
+        }
+    }
+    return max
+}
+
+const maxFound = [0];
+const result = findMax(maxFound);
+console.log(result);
