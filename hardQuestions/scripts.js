@@ -64,3 +64,14 @@ const target = 10;
 console.log('Two Sum:', hasTwoSum(nums, target));
 console.log('Subset Sum:', sumToTarget(nums, target));
 console.log('DP Subset Sum:', dpSumToTarget(nums, target));
+
+
+// 5. Documentation
+// javascript
+// README.md
+// # Sum Checker Algorithms
+// Three implementations to check if numbers sum to target:
+
+1. `hasTwoSum` - //Checks if any two numbers sum to target (O(n) time)
+2. `sumToTarget` //- Checks if any subset sums to target (recursive)
+3. `dpSumToTarget` //- Dynamic programming version (O(n*T) time)
