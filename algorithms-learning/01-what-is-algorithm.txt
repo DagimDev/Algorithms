@@ -1,0 +1,46 @@
+Title: What Is an Algorithm?
+Definition (Simple):
+An algorithm is a step-by-step method for solving a problem or performing a task.
+
+Definition (Technical):
+In computer science, an algorithm is a finite set of well-defined instructions written to perform a task 
+or solve a problem using a computer.
+
+🔹 Real-World Analogy: Making a Cup of Tea
+Boil water.
+
+Place a teabag into a cup.
+
+Pour boiling water into the cup.
+
+Wait 3 minutes.
+
+Remove teabag and enjoy.
+
+This process has a clear start, defined steps, and a desired outcome – the perfect tea.
+
+🔹 Programming Analogy
+In JavaScript:
+
+javascript
+function makeTea() {
+  console.log("Boil water");
+  console.log("Put tea bag in cup");
+  console.log("Pour hot water");
+  console.log("Wait 3 minutes");
+  console.log("Enjoy your tea");
+}
+
+makeTea();
+This function is an algorithm – it automates the task of making tea using step-by-step instructions.
+
+✅ Key Characteristics of an Algorithm
+Input – Data needed to perform the task.
+
+Output – Result after processing.
+
+Definiteness – Every step is clear.
+
+Finiteness – It ends after a certain number of steps.
+
+Effectiveness – Steps must be doable.
