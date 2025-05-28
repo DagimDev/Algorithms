@@ -31,3 +31,23 @@ function sumToTarget(nums, target) {
 }
 
 module.exports = sumToTarget;
+
+// 3. Dynamic Programming Solution
+// dpSumToTarget.js
+function dpSumToTarget(nums, target) {
+  const dp = new Array(target + 1).fill(false);
+  dp[0] = true;
+  
+  for (const num of nums) {
+    for (let i = target; i >= num; i--) {
+      if (dp[i - num]) {
+        dp[i] = true;
+        if (i === target) return true;
+      }
+    }
+  }
+  
+  return dp[target];
+}
+
+module.exports = dpSumToTarget;
