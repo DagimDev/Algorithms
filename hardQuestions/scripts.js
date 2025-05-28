@@ -51,3 +51,16 @@ function dpSumToTarget(nums, target) {
 }
 
 module.exports = dpSumToTarget;
+
+// 4. Tests
+// test.js
+const hasTwoSum = require('./twoSum');
+const sumToTarget = require('./sumToTarget');
+const dpSumToTarget = require('./dpSumToTarget');
+
+const nums = [3, 5, 2, 8, 11];
+const target = 10;
+
+console.log('Two Sum:', hasTwoSum(nums, target));
+console.log('Subset Sum:', sumToTarget(nums, target));
+console.log('DP Subset Sum:', dpSumToTarget(nums, target));
