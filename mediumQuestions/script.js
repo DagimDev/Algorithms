@@ -20,3 +20,27 @@ const twoSum = (arr, target) => {
 
 const array = twoSum([2, 7, 11, 15], 9);
 console.log(array)
+
+
+// Factorial of a Number
+// Write a recursive function to compute the factorial of a number.
+// Example: factorial(5) → 120 (5 × 4 × 3 × 2 × 1)
+
+const Factorial = (n) => {
+  if (n === 1) return 1 // base case
+    return n * Factorial(n -  1)    // recursive case
+}
+
+console.log(Factorial(4))
+
+
+// const Factorial = (num) => {
+//   let amz = num;
+//     for (let a = num - 1; a >= 1; a--) {
+//       amz *= a
+//     }
+//   return amz; 
+// };
+
+// const factoraized = Factorial(4);
+// console.log(factoraized)
