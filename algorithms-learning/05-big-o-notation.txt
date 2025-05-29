@@ -1,0 +1,178 @@
+Big-O Notation (Formal Definition)
+Big-O describes the upper bound of an algorithm’s growth rate.
+Mathematically:
+
+f(n) = O(g(n)) if there exist constants C and n₀ such that:
+f(n) ≤ C·g(n) for all n ≥ n₀.
+
+Simplified Interpretation
+O(n²) means the runtime grows quadratically (e.g., bubble sort).
+
+O(n log n) is near-linear (e.g., merge sort).
+
+O(1) means constant time (e.g., array index access).
+
+What Is Big-O Notation?
+Big-O notation describes the worst-case performance of an algorithm in terms of:
+
+Time (how long it takes to run)
+
+Space (how much memory it uses)
+
+It ignores constants and focuses on how performance scales with bigger inputs.
+
+💡 Analogy: Sorting Laundry
+Let’s say you want to sort socks by color.
+
+If you only have 3 socks, it’s fast.
+
+If you have 3000 socks, it takes longer.
+
+Your sorting method might take:
+
+1 second per sock → O(n)
+
+Double-checking each sock with every other → O(n²)
+
+
+
+What Is Time Complexity?
+Time complexity is a measure of how the runtime of an algorithm increases as the input size grows.
+
+Think of it like this:
+
+If your algorithm takes 1 second to process 10 items,
+
+Will it take 2 seconds for 20 items? 10 seconds? 100 seconds?
+
+We need a way to predict and compare performance regardless of the machine used.
+
+What Is Space Complexity?
+Space complexity measures how much memory (RAM) your algorithm uses relative to input size.
+
+Some algorithms may be fast but require lots of memory (like caching or recursion), and others may be 
+memory-efficient but slower.
+
+
+Time Complexity Deep Dive
+Common Time Complexities
+Complexity	    Example Operations	                            Real-World Analogy
+O(1)	        Array access, arithmetic operations	            Flipping a light switch
+O(log n)        Binary search, balanced tree operations	        Searching a phonebook (halving)
+O(n)	        Linear search, simple loops	                    Reading every page in a book
+O(n log         n)	Merge sort, efficient sorting	            Sorting a deck of cards optimally
+O(n²)	        Bubble sort, nested loops	                    Checking every pair in a crowd
+O(2ⁿ)	        Naive Fibonacci, brute-force algorithms	        Trying every password combination
+
+
+Detailed Examples
+Example 1: O(n) — Linear Search
+javascript
+function linearSearch(arr, target) {
+  for (let i = 0; i < arr.length; i++) { // O(n) loop
+    if (arr[i] === target) return i;     // O(1) check
+  }
+  return -1;
+}
+Analysis:
+
+Worst-case: Target is last element → n steps.
+
+Big-O: O(n).
+
+Example 2: O(n²) — Bubble Sort
+javascript
+function bubbleSort(arr) {
+  for (let i = 0; i < arr.length; i++) {          // O(n)
+    for (let j = 0; j < arr.length - i - 1; j++) { // O(n)
+      if (arr[j] > arr[j + 1]) {
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]; // O(1) swap
+      }
+    }
+  }
+  return arr;
+}
+Analysis:
+
+Nested loops → n × n = n² comparisons.
+
+Big-O: O(n²).
+
+Example 3: O(log n) — Binary Search
+javascript
+function binarySearch(arr, target) {
+  let left = 0, right = arr.length - 1;
+  while (left <= right) {                  // O(log n) iterations
+    const mid = Math.floor((left + right) / 2); // O(1)
+    if (arr[mid] === target) return mid;   // O(1)
+    if (arr[mid] < target) left = mid + 1; // O(1)
+    else right = mid - 1;                  // O(1)
+  }
+  return -1;
+}
+Analysis:
+
+Input halves each iteration → log₂n steps.
+
+Big-O: O(log n).
+
+4. Space Complexity Deep Dive
+Common Space Complexities
+Complexity	            Example Scenarios	                                Memory Usage
+O(1)	                Single variables, iterative algorithms	            Fixed (e.g., let sum = 0;)
+O(n)	                Dynamic arrays, recursion (call stack)	            Scales with input (e.g., [...arr])
+O(n²)	                2D matrices, graph adjacency matrices	            n × n storage
+
+
+Detailed Examples
+Example 1: O(1) Space — Iterative Sum
+javascript
+function sumArray(arr) {
+  let sum = 0;                   // O(1) space
+  for (let num of arr) {         // O(1) per iteration
+    sum += num;                  // No new allocations
+  }
+  return sum;
+}
+Analysis:
+
+Only 1 variable (sum) is used, regardless of input size.
+
+Big-O: O(1).
+
+Example 2: O(n) Space — Recursive Fibonacci
+javascript
+function fibonacci(n) {
+  if (n <= 1) return n;                   // Base case
+  return fibonacci(n - 1) + fibonacci(n - 2); // O(n) call stack
+}
+Analysis:
+
+Call stack depth scales linearly with n → n stack frames.
+
+Big-O: O(n) space (and O(2ⁿ) time!).
+
+Example 3: O(n²) Space — 2D Matrix
+javascript
+function createMatrix(n) {
+  const matrix = [];
+  for (let i = 0; i < n; i++) {
+    matrix.push(new Array(n).fill(0)); // O(n²) storage
+  }
+  return matrix;
+}
+Analysis:
+
+n × n elements → n² memory.
+
+Big-O: O(n²).
+
+
+ Key Takeaways
+Time complexity = How fast does it run?
+
+Space complexity = How much memory does it use?
+
+Big-O notation gives you a shared way to compare algorithms.
+
+Writing better code often means reducing both time and space complexity.
