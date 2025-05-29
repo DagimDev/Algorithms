@@ -1,0 +1,14 @@
+1. Introduction to Algorithm Analysis
+Algorithm analysis is the process of evaluating the efficiency of an algorithm in terms of:
+
+Time Complexity → How runtime grows with input size.
+
+Space Complexity → How memory usage grows with input size.
+
+Why is this important?
+
+Helps choose the best algorithm for a problem.
+
+Predicts performance at scale (e.g., handling 1M users vs. 100).
+
+Critical for optimizing real-world systems (e.g., databases, AI models).
