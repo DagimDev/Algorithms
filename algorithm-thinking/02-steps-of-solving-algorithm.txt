@@ -6,3 +6,13 @@ within the problem
     ▪ Use your own words to describe the problem.
     ▪ Try explaining the problem to a friend and see if their understanding of your
 explanation matches the problem
+
+2. Hand-write the solution or solve it on paper first
+    ▪ Take out a piece of paper and work through the problem manually. If needed, make
+a drawing depicting the problem
+    ▪ Use all the important information available in the problem
+    ▪ Use example cases/sample data to make sure that you can solve the problem on
+paper
+    ▪ NOTE: The most difficult part for newcomers is not actually solving the problem.
+The difficulty is in understanding and identifying the smallest steps the brain takes
+to solve the problem. Our brain is sometimes too fast for us to comprehend
