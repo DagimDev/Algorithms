@@ -16,3 +16,12 @@ paper
     ▪ NOTE: The most difficult part for newcomers is not actually solving the problem.
 The difficulty is in understanding and identifying the smallest steps the brain takes
 to solve the problem. Our brain is sometimes too fast for us to comprehend
+
+
+3. Craft a general step that can be followed to solve any kind of similar problem
+    ▪ This is where you would consider scenarios that might not have been covered in
+the examples you solved above and tweak the solution accordingly
+    ▪ Have you solved any similar problem? If so, take advantage of that experience and
+its information
+    ▪ See if you can reduce any steps or if you are repeating any steps
+    ▪ Eliminate redundant or unnecessary data
