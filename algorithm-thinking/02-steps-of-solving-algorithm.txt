@@ -56,3 +56,17 @@ numbers from an array:
     if (element % 2 === 0)
     Add/push that to the array called evenNumbers
     return evenNumbers
+
+5. Translate pseudocode to JavaScript
+    ▪ When you have your pseudocode ready, translate each line into real code in
+JavaScript
+        ▪ Follow the pseudocode and write the solution
+        • Use all JavaScript tools you know
+        • Variable
+        • Operators
+        • function
+        • Conditional statements
+        • Loops
+        • Arrays
+        • All the JS methods you know
+
