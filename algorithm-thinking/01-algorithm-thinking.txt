@@ -1,0 +1,10 @@
+Algorithmic thinking
+• Algorithm in programming:
+
+a JavaScript instruction/function involves chopping down an instruction to very small
+components and describing it.
+• We call the step-by-step instructions that tell a computer to solve a problem algorithm.
+This where algorithms come. There are many common examples of algorithms, from
+sorting sets of numbers to finding routes through maps to displaying information on a
+screen. A recipe is a good example of an algorithm because it says what must be done, step
+by step. It takes inputs (ingredients) and produces an output (the completed dish).
