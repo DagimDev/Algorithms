@@ -70,3 +70,8 @@ JavaScript
         • Arrays
         • All the JS methods you know
 
+6. Test/debug
+    ▪ Use sample test cases to see if your code returns the results, you want
+    ▪ It is highly recommended to use console.log () after each variable or code line This
+helps you check if the values and code are behaving as expected before you move
+on. By doing this, you catch any issues before you get too far.
