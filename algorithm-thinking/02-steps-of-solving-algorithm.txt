@@ -83,3 +83,9 @@ important to write useful comments to avoid problems and save time later if you
 need to come back to it.
     ▪ Write brief, high-level comments
 
+
+8. Practice, practice, practice
+    ▪ programming, like with anything, comes easier and more naturally with time
+    ▪ GOAL: Solve at least 30 problems within the next 10 days. With each problem
+you solve, the better a developer you become.
+
