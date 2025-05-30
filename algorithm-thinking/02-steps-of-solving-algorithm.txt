@@ -25,3 +25,34 @@ the examples you solved above and tweak the solution accordingly
 its information
     ▪ See if you can reduce any steps or if you are repeating any steps
     ▪ Eliminate redundant or unnecessary data
+
+
+4. Write the pseudo code line by line
+    ▪ Writing out pseudocode that you can translate into code will help with defining the
+structure of your code and make coding a lot easier
+    ▪ Pseudocode is a simpler version of a programming code in plain English which
+uses short phrases to write code for a program before it is implemented in a specific
+programming language.
+    ▪ Simplify the problem by dividing it into simpler cases and pick what JavaScript
+functionality you need to use to cover that case
+    ▪ Pseudocode generally does not actually have specific rules but sometimes, you
+might end up including some syntax from JavaScript. Don’t get caught up with the
+syntax. Focus on the logic and steps.
+    ▪ Look at these two pseudocode examples for a function that returns only even
+numbers from an array:
+    • Example 1, pseudocode that has more words
+        function selectEvenNumbers
+        create a variable with an empty array called evenNumbers to store
+        the selected even numbers from the original array
+        for each element in that array
+        see if that element is even
+        if element is even (if the remainder is 0 when divided by 2),
+        add/push that to the array evenNumbers
+        return evenNumbers
+• Example 2, pseudocode that less more words
+    function selectEvenNumbers
+    evenNumbers = []
+    for i = 0 to i = length of the original array
+    if (element % 2 === 0)
+    Add/push that to the array called evenNumbers
+    return evenNumbers
