@@ -1,0 +1,8 @@
+Steps to follow when solving algorithmic problem
+• 1. Understand the problem statement
+    ▪ You can’t solve a problem you don’t understand.
+    ▪ Read the problem as many times as possible until you understand every word used
+within the problem
+    ▪ Use your own words to describe the problem.
+    ▪ Try explaining the problem to a friend and see if their understanding of your
+explanation matches the problem
