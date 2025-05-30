@@ -75,3 +75,11 @@ JavaScript
     ▪ It is highly recommended to use console.log () after each variable or code line This
 helps you check if the values and code are behaving as expected before you move
 on. By doing this, you catch any issues before you get too far.
+
+7. Write useful comments in your code
+    ▪ You may not always remember what every single line meant a month later. And
+someone else working on your code may not know either. That’s why it’s
+important to write useful comments to avoid problems and save time later if you
+need to come back to it.
+    ▪ Write brief, high-level comments
+
