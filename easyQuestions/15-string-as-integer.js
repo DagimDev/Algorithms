@@ -39,3 +39,19 @@ console.log(stringInt("1000"))
 console.log(stringInt("6"))
 console.log(stringInt("12"))
 console.log(stringInt("-2"))
+
+const stringParseInt = (str) => {
+  const num = parseInt(str, 10);
+  
+  if (isNaN(num)) {
+    return "Invalid integer format";
+  }
+  
+  if (num <= 0) {
+    return "Please provide only positive integers";
+  }
+  
+  return num;
+};
+
+console.log(stringParseInt("12"))
