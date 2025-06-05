@@ -25,7 +25,13 @@ const spaceMeOut = (str) => {
 
     return space
 }
-
 console.log(spaceMeOut("space"))
 console.log(spaceMeOut("far out"))
 console.log(spaceMeOut("elongated musk"))
+
+// Using Array.join()
+const spaceMeOutJoin = (str) => {
+    return str.split("").join(" ")
+}
+ 
+console.log(spaceMeOutJoin("hello"))
