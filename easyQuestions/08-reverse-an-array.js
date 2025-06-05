@@ -17,4 +17,19 @@ const reverse = (arr) => {
     return isReversed
 }
 
-console.log(reverse([1, 2, 3, 4, 5]))
+console.log(reverse([1, 2, 3, 4, 5]))  
+
+const recursiveReverse = (arr) => {
+    if (arr.length === 0) return []
+    return recursiveReverse(arr.slice(1).concat(arr[0]))
+}
+
+console.log(recursiveReverse([1, 2, 3, 4, 5]))
+
+function recursiveReverse(arr, left = 0, right = arr.length - 1) {
+    if (left >= right) return arr;
+    [arr[left], arr[right]] = [arr[right], arr[left]];
+    return recursiveReverse(arr, left + 1, right - 1);
+}
+
+console.log(recursiveReverse([1, 2, 3, 4, 5]))
