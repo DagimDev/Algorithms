@@ -14,12 +14,25 @@
 // All numbers will be positive.
 
 const stringInt = (str) => {
-    const isNumber = Number(str)
-    if (isNumber <= 0) {
-        return "Please provide only posative numbers"
-    }
-     console.log(typeof isNumber)
-    return isNumber
+    const num = Number(str);
+  
+  // Check if conversion failed (NaN) or not a finite number
+  if (isNaN(num) || !isFinite(num)) {
+    return "Invalid number format";
+  }
+  
+  // Check if negative
+  if (num < 0) {
+    return "Please provide only positive numbers";
+  }
+  
+  // Check if zero 
+  if (num === 0) {
+    return "Zero is not allowed";
+  }
+  
+  // Return as number 
+  return num;
 }
 
 console.log(stringInt("1000"))
