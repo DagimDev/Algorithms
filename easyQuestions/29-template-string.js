@@ -16,12 +16,9 @@
 // const age = 12;
 // `Hello, you are ${age < 18 ? 'young' : 'old'}.` ➞ "Hello, you are young."
 
-const templateString = () => {
-  const a = "John";
-  const b = "Joe";
-  const c = "Jack";
-
-  return `my name is ${a}`
+const createNameString = (names) => {
+  return `Their names were: ${names.join(', ')}.`;
 };
 
-console.log(templateString())
+console.log(createNameString(["John", "Joe", "Jack"]));
+// Output: "Their names were: John, Joe, Jack."
