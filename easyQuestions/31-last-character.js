@@ -12,7 +12,8 @@
 // Notes
 // The function must return a boolean value ( i.e. true or false).
 
-const isLastCharacterN = (str) => str[str.length - 1].toLowerCase() === "n" ? true : false
+// const isLastCharacterN = (str) => str[str.length - 1].toLowerCase() === "n" ? true : false
+const isLastCharacterN = (str) => str.toLowerCase().endsWith("n");
 console.log(isLastCharacterN("Aiden"))
 console.log(isLastCharacterN("Piet"))
 console.log(isLastCharacterN("Bert"))
