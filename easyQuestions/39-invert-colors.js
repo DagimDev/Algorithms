@@ -24,3 +24,8 @@ const colorInvert = (rgb) => {
 console.log(colorInvert([0, 0, 0]))
 console.log(colorInvert([255, 255, 255]))
 console.log(colorInvert([165, 170, 221]))
+
+const invert = (rgb) => rgb.map(val => 255 - val)
+console.log(invert([0, 0, 0]))
+console.log(invert([255, 255, 255]))
+console.log(invert([165, 170, 221]))
