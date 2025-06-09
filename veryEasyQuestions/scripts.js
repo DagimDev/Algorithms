@@ -1,4 +1,4 @@
-console.log("Easy Algortithm Questions");
+console.log("Very Easy Algortithm Questions");
 
 // check if the array of the numbers are eveb or odd
 function EvenOdd(p) {
