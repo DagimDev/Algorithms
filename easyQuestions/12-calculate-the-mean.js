@@ -19,7 +19,7 @@ const mean = (arr) => {
         sum += arr[i]
         total++
     } 
-    return (sum / total).toFixed(2)
+    return parseFloat((sum / arr.length).toFixed(2));
 }
 
 console.log(mean([1, 0, 4, 5, 2, 4, 1, 2, 3, 3, 3]))
