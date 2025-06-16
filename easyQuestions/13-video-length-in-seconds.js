@@ -13,32 +13,41 @@
 // You may get a number of minutes over 99 (e.g. "121:49" is perfectly valid).
 
 const minutesToSeconds = (str) => {
-  let min = [];
-  let sec = [];
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === ":") {
-      break;
-    } else {
-      min.push(str[i]);
-    }
-  }
-  for (let j = str.length - 1; j > 0; j--) {
-    if (str[j] === ":") {
-      break;
-    } else {
-        sec.push(str[j])
-    }
-  }
-  let dekika = Number(min.join(""));
-  let second = Number(sec.reverse().join(""))
-  if (second >= 60) return false 
-  console.log(dekika)
-  console.log(second)
+  const [minutes, seconds] = str.split(":").map(Number)
+  if (seconds >= 60) return false;
+  return minutes * 60 + seconds
+}
+console.log(minutesToSeconds("10:50"))
 
-  return dekika * 60 + second;
-};
 
-console.log(minutesToSeconds("01:00"));
-console.log(minutesToSeconds("13:56"));
-console.log(minutesToSeconds("10:60"));
-console.log(minutesToSeconds("121:49"));
+// My Solution
+// const minutesToSeconds = (str) => {
+//   let min = [];
+//   let sec = [];
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === ":") {
+//       break;
+//     } else {
+//       min.push(str[i]);
+//     }
+//   }
+//   for (let j = str.length - 1; j > 0; j--) {
+//     if (str[j] === ":") {
+//       break;
+//     } else {
+//         sec.push(str[j])
+//     }
+//   }
+//   let dekika = Number(min.join(""));
+//   let second = Number(sec.reverse().join(""))
+//   if (second >= 60) return false 
+//   console.log(dekika)
+//   console.log(second)
+
+//   return dekika * 60 + second;
+// };
+
+// console.log(minutesToSeconds("01:00"));
+// console.log(minutesToSeconds("13:56"));
+// console.log(minutesToSeconds("10:60"));
+// console.log(minutesToSeconds("121:49"));
