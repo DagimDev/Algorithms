@@ -7,5 +7,32 @@
 
 const age = 6;
 
-const discountCheck = age <= 6 || age >= 65  ? "Discount" : "No discount"
-console.log(discountCheck)
+const discountCheck = age <= 6 || age >= 65 ? "Discount" : "No discount";
+console.log(discountCheck);
+
+// 1d. Continuing from exercise 1c, let's say the discount is only available if it is not a holiday. Create a variable: const isHoliday = true;
+
+// Update the code so that in order to get a discount, people must meet the age requirement and it is also not a holiday.
+
+// Note: && has a higher priority than || so you may need to use brackets () to control which code gets done first.
+
+const isHoliday = false;
+const amusementParkDiscountCheck = (age) => {
+  if (!isHoliday) {
+    if (age <= 6 || age >= 65) return "Discount";
+  }
+  return "No discount"
+};
+
+console.log(amusementParkDiscountCheck(5));
+
+
+      // && has a higher priority than || so for
+      // this to work correctly, we need to add
+      // brackets () around the || check to make
+      // sure that it gets done first.
+      if ((age <= 6 || age >= 65) && !isHoliday) {
+        console.log('Discount');
+      } else {
+        console.log('No discount');
+      }
