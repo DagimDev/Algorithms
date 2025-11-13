@@ -26,3 +26,20 @@ const twoSum = (arr, target) => {
   }
   return [];
 };
+
+
+
+const Factorial = (num) => {
+  let amz = num;
+    for (let a = num - 1; a >= 1; a--) {
+      amz *= a
+    }
+  return amz;
+};
+
+const factoraized = Factorial(4);
+console.log(factoraized)
+
+// Fibonacci Sequence
+// Return the nth number in the Fibonacci sequence (using recursion or iteration).
+// Example: fibonacci(6) → 8 (0, 1, 1, 2, 3, 5, 8)
