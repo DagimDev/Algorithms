@@ -43,3 +43,16 @@ console.log(factoraized)
 // Fibonacci Sequence
 // Return the nth number in the Fibonacci sequence (using recursion or iteration).
 // Example: fibonacci(6) → 8 (0, 1, 1, 2, 3, 5, 8)
+
+const FibonacciSequence = (x) => {
+  let fib = [0, 1];
+  for (let i = 1; i <= x; i++) {
+    fib.push(fib[i] + fib[i - 1]);
+  }
+  // fib.push(fib[0] + fib[1]);
+  // console.log(typeof fib)
+  return fib;
+};
+
+const isSequence = FibonacciSequence(5);
+console.log(isSequence);
