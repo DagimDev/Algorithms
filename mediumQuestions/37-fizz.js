@@ -55,3 +55,6 @@ const Factorial = (num) => {
 
 const factoraized = Factorial(4);
 console.log(factoraized)
+
+
+console.log(Factorial(456))
